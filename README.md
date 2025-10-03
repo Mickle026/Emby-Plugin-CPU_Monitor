@@ -1,7 +1,5 @@
 # CPU Monitor (Emby Plugin)
 
-![Emby Logo](https://raw.githubusercontent.com/MediaBrowser/Emby.Resources/master/images/logos/emby.png)
-
 ## Overview
 The **CPU Monitor** plugin adds real-time CPU usage monitoring inside Emby Server.  
 It provides administrators with a lightweight dashboard view, logging, and optional alerts when CPU usage crosses configurable thresholds.
