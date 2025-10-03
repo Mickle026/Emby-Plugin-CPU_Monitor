@@ -56,7 +56,7 @@ If you want to compile the plugin yourself:
 ---
 
 ## Screenshots
-_Add screenshots of the configuration page and monitoring output here._
+![Emby Logo](CPUMonitor.jpeg)
 
 ---
 
