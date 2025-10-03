@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <FileVersion>1.0.0.2</FileVersion>
+    <AssemblyVersion>1.0.0.2</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="CPUMonitor.html" />
+    <None Remove="CPUMonitor.js" />
+    <None Remove="thumb.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="CPUMonitor.html" />
+    <EmbeddedResource Include="CPUMonitor.js" />
+    <EmbeddedResource Include="thumb.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediaBrowser.Common" Version="4.8.11" />
+    <PackageReference Include="MediaBrowser.Server.Core" Version="4.8.11" />
+    <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="9.0.5" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;$(TargetPath)&quot; &quot;C:\Users\mickl\AppData\Roaming\Emby-Server\programdata\plugins&quot; /y" />
+  </Target>
+
+</Project>

@@ -1,0 +1,79 @@
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<title>CPU Usage Monitor</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8e+Pp4j7z5l5c5e5f5e5f5e5f5e5f5e5f5e" crossorigin="anonymous" />
+
+<div id="CPUMonitor" data-role="page" class="page type-interior pluginConfigurationPage page-windowScroll" data-require="emby-button,emby-select,emby-checkbox,emby-linkbutton,emby-input" data-controller="__plugin/CPUMonitor.js">
+    <div data-role="content">
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            .core {
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+            }
+
+            .label {
+                width: 80px;
+            }
+
+            .progress {
+                width: 400px;
+                height: 15px;
+                background: gray;
+                position: relative;
+            }
+
+            .fill {
+                height: 100%;
+                background: green;
+                position: absolute;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center; /* Centers horizontally */
+                justify-content: center; /* Centers vertically */
+                margin-top: 30px; /* Moves content down */
+            }
+        </style>
+
+        <div class="container">
+            <h2>CPU Usage Monitor</h2>
+            <div id="cpuContainer"></div>
+            <br />
+            <br />
+            <hr />
+            <br />
+            You can Donate or Buy Me a drink here.
+            <a id="Donate"></a>
+            <br />
+            If you have a question or comment please feel free to contact me on the Emby Forum in the plugins section.<br />
+            Search for user: mickle026 - I am usually in the plugins section, link below<br />
+            <a href="https://emby.media/community/index.php?/forum/46-plugins/" target="_blank">Emby Forum</a><br />
+            <br />
+            <b>DISCLAIMER</b><br />
+            <br />
+            As with all my plugins, use this at your OWN risk.<br />
+            I am not responsible for any damage or loss of data - any of it!<br />
+            <br />
+            Under no circumstances will I be liable for any loss or damage including without limitation, <br />
+            indirect or consequential loss or damage, <br />
+            or any loss or damage whatsoever arising from loss of data or profits arising out of,<br />
+            or in connection with, the use of this plugin.<br />
+            <br />
+            GOT IT?<br />
+            Is this clear?<br />
+            <br />
+            ENJOY Playing :)<br />
+        </div>
+       
+
+    </div>
+</div>
