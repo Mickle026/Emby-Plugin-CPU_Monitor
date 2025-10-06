@@ -61,7 +61,12 @@ If you want to compile the plugin yourself:
 ## Roadmap
 - [ ] Add per-core CPU graphing  
 - [ ] Export logs to CSV  
-- [ ] Add email alerts  
+- [ ] Add email alerts
+
+---
+
+## 🧑‍💻 Developers
+**Author:** Mike Williams  
 
 ---
 
